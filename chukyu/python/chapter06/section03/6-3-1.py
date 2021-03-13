@@ -1,4 +1,4 @@
-# https://atcoder.jp/contests/abc007/submissions/20049997
+# https://atcoder.jp/contests/abc007/submissions/20864463
 
 from collections import deque
 
@@ -35,7 +35,7 @@ while len(Q) > 0:
         if not (0 <= i2 < R and 0 <= j2 < C):
             continue
         # もし壁マスであれば無視する。
-        if S[i][j] == '#':
+        if S[i2][j2] == '#':
             continue
         # もし未訪問（dist[i2][j2] が -1）であれば、距離を更新してキューに入れる。
         if dist[i2][j2] == -1:
